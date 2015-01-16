@@ -1,0 +1,116 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<script type="text/javascript" src="/jquery/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+
+<script>
+$(document).ready(function(){
+  $("#hide").click(function(){
+    $("p").hide(300);
+  });
+  $("#show").click(function(){
+    $("p1").show(300);
+  });
+});
+</script>
+<script type="text/javascript">
+$ (document).ready(function(){
+    $("#button1").click(function(){
+     $("label").hide(300).show(300);  
+     $("#h1").toggle(500).show(500);
+    });
+    
+});
+
+$(document).ready(function(){
+  $("#p2").mouseenter(function(){
+    alert("You entered !");
+  });
+  $("#p2").mouseleave(function(){
+    alert("you Leaved");
+  })
+
+});
+$(document).ready(function(){
+    $("#b1").click(function(){
+        $("#div1").fadeIn();
+        $("#div2").fadeOut();
+        $("#div3").fadeToggle();
+    });
+});
+
+$(document).ready(function(){
+    $("#btn1").click(function(){
+    $("#panel").slideToggle()("slow");
+    });
+});
+
+$(document).ready(function(){
+  $("#btn2").click(function(){
+    $("#div4").animate({
+      height:'toggle'
+    });
+  });
+});
+
+</script>
+<style type="text/css">
+    #panel{
+        padding: 5px;
+        text-align: center;
+        background-color: Blue;
+        
+    }
+</style>
+
+
+<body>
+<h1>Hello</h1>
+<p id="p1">If you click on the "Hide" button, I will disappear.</p>
+<button id="hide">Hide</button>
+<button id="show">Show</button>
+
+<div>    
+    <label >Hiii Welcome to jquery</label>
+    <h3 id = "h1">Hide, Show, Toggle, alert </h3>
+    <div>
+        <p id = "p2">
+            Enter To the Jquery
+        </p>
+        <button id ="button1" >click</button>
+    </div>
+</div>
+<div>
+    <h3>Fade</h3>
+    <div id ="d1"><label>click the button for fadein , fadeout, fadetoggle</label></div>
+    <p>
+        
+        <div id="div1" style="width:80px;height:80px;display:none;background-color:black;"></div>
+        <div id="div2" style="width:80px;height:80px;background-color:Blue;"></div>
+        <div id="div3" style="width:80px;height:80px;background-color:Yellow;"></div>
+    </p>
+    <p>
+        <button id = "b1">fade</button>
+    </p>
+</div>
+<div>
+    <h3>Sliding</h3>
+    <button id="btn1">click</button>
+    <div id = "panel">Hello </div>
+</div>
+
+<div>
+    <h3>Animate</h3>
+    <button id="btn2">click</button>
+    <div id="div4" style="background:Red;height:100px;width:100px;position:absolute;"></div>
+</div>
+
+
+</body>
+
+</html>

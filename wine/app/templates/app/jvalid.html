@@ -1,0 +1,56 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="{% static "css/jquery-ui.css" %}"/>
+    <link rel="stylesheet" type="text/css" href="{% static "css/jquery.dataTables.css" %}"/>
+
+</head>
+<script type="text/javascript" src="{% static "js/jquery-1.11.1.min.js" %}"></script>
+<script type="text/javascript" src="{% static "js/jquery.validate.min.js" %}" ></script>
+<script type="text/javascript" src="{% static "js/jquery-ui.js" %}"></script>
+<!--  <script>
+  $(function() {
+    $( "#datepicker" ).datepicker({
+        changeMonth: true,
+        changeYear: true,
+        yearRange: '1980:2014',
+        dateFormat: "yy-mm-dd",
+    });
+  });
+  </script>-->
+<script type="text/javascript" src="{% static "js/jquery.min.js" %}"></script>
+<script type="text/javascript" src="{% static "js/jquery.dataTables.js" %}" ></script>
+<!--
+<script type="text/javascript" src="{% static "js/jquery.dataTables.min.js" %}" ></script>
+<script type="text/javascript">
+  $(function(){
+    $("#my_table").dataTable();
+  })
+</script>-->
+
+
+<body>
+<h1>jQuery Validation Plugin Demo</h1>
+
+<p style="text-align:center"></p>
+
+<form id="form" method="post" action="">
+    <h3>Form For Validation </h3>
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name">
+    <label for="email">Email</label>
+    <input type="text" id="email" name="email">
+    <input type="submit" class="submit" value="Submit">
+    <p>Date: <input type="text" id="datepicker"></p>
+</form>
+
+<h1>Form Fetch from database</h1>
+<a href="{% url 'add-user' %}" id="add_user"  >Add New User</a>
+<div id = "load_form"> 
+</div>
+
+<script type="text/javascript" src="{% static "js/sample.js" %}" ></script>
+</body>
+</html

@@ -1,0 +1,18 @@
+<h1>
+     CARS
+
+</h1>
+<div>
+    <p id = "car-list">
+        {% if cars %}
+        {% for car in cars %}
+        <p>
+            {{car.name}}
+            <img src="{{car.image}}" height="150px" width="400px" alt="" /></a>
+        </p>
+        {% endfor %}
+        {% else %}
+        <a href="">No Cars</a>
+        {% endif %}
+    </p>
+</div>

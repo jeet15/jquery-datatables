@@ -1,0 +1,19 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <header><h1>Car Showroom</h1></header>
+</head>
+<script type="text/javascript" src="{% static "js/jquery-1.11.1.min.js" %}"></script>
+<script type="text/javascript" src="{% static "js/jquery.validate.js" %}" ></script>
+<body>
+   <input type="button" id="driver" value="All Cars" />
+   <a href="{% url 'add-car' %}" id="add_car"  >Add New Car</a>
+   <div id="load_data">       
+     
+   </div>
+<script type="text/javascript" src="{% static "js/jquery.validate.js" %}" ></script>
+<script type="text/javascript" src="{% static "js/main.js" %}" ></script>
+</body>
+</html>
